@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom, #0D0D0D, #5F0E8F, #A300FF);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   }
+   
+   h1 {
+    text-align: center;
+    padding: 20px;
+    color: #f2f2f2;
+   }
+   
+   .input-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+   }
+   
+   #searchInput {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #f2f2f2;
+    border-radius: 20px;
+   }
+   
+   #searchButton {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background-color: #5F0E8F;
+    color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 20px;
+   }
+
+   #searchButton:hover {
+    background-color: #a200ff;
+   }
+   
+   .filters {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+   }
+   
+   .filters select, .filters input {
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+   }
+   
+   .results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+   }
+   
+   .movie-card {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   }
+   
+   .movie-card img {
+    width: 100%;
+    height: auto;
+   }
+   
+   .movie-card h3 {
+    margin: 10px 0;
+   }
+   
