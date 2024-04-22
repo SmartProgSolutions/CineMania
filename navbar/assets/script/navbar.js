@@ -3,8 +3,10 @@
 class Navbar{
     constructor(document){
         this.document = document;
+        this.window = window;
         this.ul = document.querySelector('#navbar');
         this.eventContent();
+        this.eventSubmit();
     }
 
     eventContent(){ // Método para tratar do evento DOMContentLoaded
@@ -15,15 +17,34 @@ class Navbar{
             const search = this.createLink(null, null, null, 'buscador');
             const entrar = this.createLink('../../loginAndRegister/index.html', null, 'Entrar');
             const registrar = this.createLink('../../loginAndRegister/index.html', null, 'Registrar-se');
+            const buttonPortugues = this.createButton('button', 'btnPortugues', 'btnLanguage', 'Português');
+            const buttonEnglish = this.createButton('button', 'btnIngles', 'btnLanguage', 'Inglês');
+
 
             this.ul.appendChild(cinemania);
             this.ul.appendChild(lancamentos);
             this.ul.appendChild(categorias);
+            this.ul.appendChild(buttonPortugues);
+            this.ul.appendChild(buttonEnglish);
             this.ul.appendChild(search);
             this.ul.appendChild(entrar);
             this.ul.appendChild(registrar);
 
         })
+    }
+
+    eventSubmit(){ // Método para tratar do evento submit.
+        this.document.addEventListener('submit', (e) => {
+            // Quando o formulário for enviado será enviado um objeto com chave o genero e o valor o id
+            e.preventDefault();
+
+            if(e.target.id === 'formBuscador'){
+                const dados = e.target.querySelector('#search').value;
+                this.window.location.href = "../../results/search.html?dados=" + encodeURIComponent(dados);
+
+                return;
+            }
+        });
     }
 
     createLink(href, classe, content, id = null){
@@ -32,10 +53,10 @@ class Navbar{
         if(id){
             li.setAttribute('id', id);
 
-            const formBuscador = this.createForm('/', 'get', 'formBuscador');
+            const formBuscador = this.createForm('search.html', 'get', 'formBuscador');
             const label = this.createLabel('Search: ', 'search');
             const buscador = this.createInput('search');
-            const button = this.createButton('botaoPesquisa');
+            const button = this.createButton('submit', 'botaoPesquisa');
 
             label.appendChild(buscador);
 
@@ -44,13 +65,15 @@ class Navbar{
 
             li.appendChild(formBuscador);
 
-
             return li;
         }
+
         const a = this.document.createElement('a');
+
         if(classe){
             a.classList.add(`${classe}`);
         }
+
         a.setAttribute('href', `${href}`);
         a.textContent = `${content}`;
 
@@ -74,14 +97,26 @@ class Navbar{
 
         input.id = `${id}`;
         input.type = 'text';
+        input.name = 'dados';
 
         return input;
     }
 
-    createButton(id){ // Método para criar o elemento button.
+    createButton(type, id, classe, content = null){ // Método para criar o elemento button.
         const button = this.document.createElement('button');
-        button.type = 'submit';
-        button.id = `${id}`;
+        button.type = `${type}`;
+
+        if(id){
+            button.id = `${id}`;
+        }
+
+        if(content){
+            button.textContent = content;
+        }
+
+        if(classe){
+            button.classList.add(`${classe}`);
+        }
 
         return button;
     }
@@ -97,4 +132,15 @@ class Navbar{
     }
 }
 
-const navbar = new Navbar(document);
+const navbar = new Navbar(document, window);
+
+
+
+
+
+// const cinemania = this.createLink('../../../home/home.html', 'active', 'CineMania');
+// const lancamentos = this.createLink('#lancamentos', null, 'Lançamentos');
+// const categorias = this.createLink('../../moviesForCategories/catg.html', null, 'Categorias');
+// const search = this.createLink(null, null, null, 'buscador');
+// const entrar = this.createLink('../../loginAndRegister/index.html', null, 'Entrar');
+// const registrar = this.createLink('../../loginAndRegister/index.html', null, 'Registrar-se');

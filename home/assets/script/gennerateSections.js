@@ -69,7 +69,7 @@ function createMovieCard(movie) {
         // Redireciona para a página de detalhes do filme
         window.location.href = `../../detailsMovie/detailMovie.html?id=${movie.id}`;
     });
-
+//    
     card.appendChild(image); 
     card.appendChild(title);
 
