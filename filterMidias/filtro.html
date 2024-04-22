@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Discover - CineMania</title>
+ <link rel="stylesheet" href="assets/css/filtro.css">
+ <link rel="stylesheet" href="assets/css/stylecardmovie.css">
+ <link rel="stylesheet" href="../header/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <ul id="navbar">
+        <!-- Navbar -->
+    </ul>
+  </nav>
+  
+  <section class="content">
+    <div class="input-container">
+      <input type="text" id="searchInput" placeholder="Pesquisar filme...">
+      <button id="searchButton">Pesquisar</button>
+    </div>
+    <div class="filters">
+      <select id="genreFilter">
+        <option value="">Selecione o gênero</option>
+        <!-- Opções de gênero serão preenchidas dinamicamente -->
+      </select>
+      <select id="streamingTypeFilter">
+        <option value="">Selecione o tipo de streaming</option>
+        <option value="movie">Filme</option>
+        <option value="tv">Série</option>
+      </select>
+      <input type="number" id="yearFilter" placeholder="Ano de lançamento">
+    </div>
+
+    <div class="container">
+      <!-- Resultados -->
+      <div id="movie-cards" class="movie-cards"></div>
+    </div>
+  </section>
+
+
+
+
+  <script src="assets/script/main.js"></script>
+  <script src="../header/assets/script/navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:300);
+
+body{
+ margin:0;
+ padding:0;
+ font-family: sans-serif;
+ background: linear-gradient(90deg, #0D0D0D, #5F0E8F);
+ color: #F2F2F2;
+ flex-wrap: wrap;
+ display: flex;
+ background-repeat: no-repeat;
+ min-height: 100vh;
+ background-attachment: fixed;
+ background-size: cover;
+ 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: #F2F2F2 2px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-card h2 {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Style do slider de filmes */
+.movie-section {
+    margin-bottom: 50px;
+}
+
+.movie-row {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.movie-card {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    scroll-snap-align: start;
+    width: calc(13% - 20px);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /*  Estilos do card do filme */
+}
+h2:hover{
+    color: #A300FF;
+   }
