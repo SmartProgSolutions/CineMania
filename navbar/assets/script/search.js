@@ -49,11 +49,17 @@ class Search{
         const image = this.document.createElement('img');
         image.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
         image.alt = movie.title;
+        image.onerror = () => this.handleImageError(image);
     
         card.appendChild(image);
         card.appendChild(title);
     
         return card;
+    }
+
+    handleImageError(img) {
+        const div = img.parentNode;
+        div.remove(); // Remover o elemento pai (div) que contém a imagem
     }
 }
 
