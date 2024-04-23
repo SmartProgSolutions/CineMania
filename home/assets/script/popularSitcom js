@@ -1,17 +1,17 @@
 
-const apiKeyy = '5d3740a5fc6dfa4e862bede23e6d4fdb'; // é bom que cada um colque sua chave, se não vcs vão estourar meu limite kkkk 
+// const apiKeyyy = '5d3740a5fc6dfa4e862bede23e6d4fdb'; é bom que cada um colque sua chave, se não vcs vão estourar meu limite kkkk 
 
 
 // essa fynção busca o Json com os filmes desejados
-function fetchMoviesByType() {
-    const fetchMoviesByGenreUrl = `http://api.themoviedb.org/3/movie/popular?language=pt-BR&api_key=${apiKeyy}&page=1`;
+function fetchMoviesByType1() {
+    const fetchMoviesByGenreUrl = `https://api.themoviedb.org/3/tv/popular?language=pt-BR&api_key=${apiKey}&page=1`;
 
     fetch(fetchMoviesByGenreUrl)
         .then(response => response.json())
         .then(data => {
-            const popularMoviesDiv = document.querySelector('.popular-movies');
-            data.results.forEach(movie => {
-                const movieCard = createMovieCard(movie);
+            const popularMoviesDiv = document.querySelector('.popular-series');
+            data.results.forEach(movie1 => {
+                const movieCard = createMovieCard(movie1);
                 console.log("ihh",data)
                 popularMoviesDiv.appendChild(movieCard);
             });
@@ -22,20 +22,20 @@ function fetchMoviesByType() {
 
 
 // Essa fpnção cria os cards dos filmes 
-function createMovieCard(movie) {
+function createMovieCard(movie1) {
     const card = document.createElement('div');
     card.className = 'movie-card';
 
     const title = document.createElement('h3');
-    title.textContent = movie.title;
+    title.textContent = movie1.title;
 
     const image = document.createElement('img');
-    image.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
-    image.alt = movie.title;
+    image.src = `https://image.tmdb.org/t/p/w500${movie1.poster_path}`;
+    image.alt = movie1.title;
 
     image.addEventListener('click', function() {
         // Redireciona para a página de detalhes do filme
-        window.location.href = `../../detailsMovie/detailMovie.html?id=${movie.id}`;
+        window.location.href = `../../detailsMovie/detailMovie.html?id=${movie1.id}`;
     });
 
     card.appendChild(image); 
@@ -47,6 +47,6 @@ function createMovieCard(movie) {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    fetchMoviesByType(); // Adicione esta linha
+    fetchMoviesByType1(); // Adicione esta linha
 });
 

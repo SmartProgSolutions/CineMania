@@ -17,18 +17,30 @@
     </nav>
 
     <div class="container">
-        <h2>Home</h2>
-        <div id="categories" class="categories">
-            <div id="category" class="category">
+        <!-- <h2>Home</h2> -->
+
+        <!-- <div id="categories" class="categories"> -->
+            <!-- <div id="category" class="category"> -->
                 <!-- Aqui seram montadas as categorias de seus respctivos sliders de filmes -->
-            </div>
-        </div> 
+            <!-- </div> -->
+        <!-- </div>  -->
     
-        <div class="preference-categories"></div> <!-- vamos colocar as preferencias de categorias do usuário-->
-        <div class="popular-movies"></div>  <!--http://api.themoviedb.org/3/movie/popular?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
-        <div class="popular-series"></div>  <!-- https://api.themoviedb.org/3/tv/popular?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
-        <div class="featured-movies"></div>  <!-- https://api.themoviedb.org/3/movie/top_rated?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
-        <div class="featured-series"></div>  <!-- https://api.themoviedb.org/3/tv/top_rated?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
+         <!-- fazendo -->  
+        <div class="preference-categories "></div>   <!--  vamos colocar as preferencias de categorias do usuário  -->
+                
+        <!-- feito -->
+        <h3>Filmes Populares</h3>
+        <div class="popular-movies slide"></div>  <!--https://api.themoviedb.org/3/movie/popular?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
+        
+        <!-- feito -->
+        <h3>Séries Tv Populares</h3>
+        <div class="popular-series slide "></div>  <!-- https://api.themoviedb.org/3/tv/popular?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
+
+        <h3>Filmes em destaque</h3>
+        <div class="featured-movies slide "></div>  <!-- https://api.themoviedb.org/3/movie/top_rated?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
+
+        <h3>Em destaque</h3>
+        <div class="featured-series slide"></div>  <!-- https://api.themoviedb.org/3/tv/top_rated?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
 
     </div>
 
@@ -38,6 +50,12 @@
     
     <script src="./assets/script/script.js"></script> 
     <script src="../navbar/assets/script/navbar.js"></script>
-    <script src="../home/assets/script/gennerateSections.js"></script>
+    <!-- <script src="../home/assets/script/gennerateSections.js"></script> -->
+    <script src="../home/assets/script/getIdsPreferences.js"></script>
+
+    <script src="../home/assets/script/popularMovies.js"></script>
+    <script src="../home/assets/script/popularSitcom js"></script>
+    <script src="../home/assets/script/featuredMovies.js"></script>
+    <script src="../home/assets/script/featuredSitcom.js"></script>
 </body>
 </html>
