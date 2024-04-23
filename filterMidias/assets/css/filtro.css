@@ -36,6 +36,10 @@ cursor: pointer;
 border-radius: 20px;
 }
 
+label{
+    color: aliceblue;
+}
+
 #searchButton:hover {
 background-color: #a200ff;
 }
