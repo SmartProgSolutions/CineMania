@@ -1,20 +1,30 @@
 body {
-  height: 100vh;
-  font-family: sans-serif;
-  margin: 0; /* Garante que não haja margem extra no topo ou na parte inferior da página */
-}
-
-.footer {
-  position: fixed; /* Fixa o rodapé na parte inferior da janela de visualização */
-  bottom: 0; /* Alinha o rodapé com a parte inferior da janela de visualização */
-  left: 0; /* Alinha o rodapé com a parte esquerda da janela de visualização */
-  right: 0; /* Alinha o rodapé com a parte direita da janela de visualização */
-  padding: 2rem;
-  background: #640B8B;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+ }
+ 
+ #wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+ }
+ 
+ #body {
+  flex: 1;
+ }
+ 
+ footer {
+  width: 100%;
+  /* Ajuste a altura conforme necessário */
+  height: 40px;
+  background-color: purple;
   color: white;
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
-}
+ }
+ 
