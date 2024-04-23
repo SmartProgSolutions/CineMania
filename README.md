@@ -7,12 +7,19 @@ O CineMania é uma aplicação web que oferece aos usuários um vasto catálogo 
 O CineMania oferece diversas funcionalidades para auxiliar os usuários na busca por seus filmes favoritos:
 
 Catálogo Extenso: Acesse um vasto acervo de filmes provenientes da API The Movie Database (https://www.themoviedb.org/), com opções para filtrar e encontrar o filme perfeito para você.
+
 Navegação por Categorias: Explore filmes por diferentes categorias, como gêneros, popularidade e lançamentos recentes.
+
 Página Detalhada do Filme: Obtenha informações completas sobre cada filme, incluindo título, ano de lançamento, sinopse, classificação e trailer (quando disponível).
+
 Busca Personalizada: Utilize a barra de busca para encontrar filmes por título, gênero, diretor ou palavras-chave.
+
 Página de Login e Cadastro: Crie uma conta para salvar suas preferências e acompanhar seus filmes favoritos.
+
 Página de Contato: Entre em contato com a equipe do CineMania para enviar sugestões ou relatar problemas.
+
 Design Responsivo: Acesse o CineMania de qualquer dispositivo, seja ele um computador, tablet ou smartphone, com a interface se adaptando perfeitamente à tela.
+
 Desempenho Otimizado: Navegue pelo CineMania com rapidez e fluidez, graças à otimização do código e da estrutura da aplicação.
 
 # Tecnologias Utilizadas
