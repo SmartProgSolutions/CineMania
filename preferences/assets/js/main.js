@@ -14,21 +14,21 @@ class Categorias{
             e.preventDefault();
 
             if(e.target.id === 'formBuscador'){
-                alert("Deu certo!");
-                // Cuidar da parte da pesquisa
                 return;
             }
 
             if(this.validate(e)){
-                // Acessa os valores dos campos do formulário
-                const formData = new FormData(this.form);
+                //Entregar -> Preferências
+                if(e.target.id === 'formPreferencia'){
+                    const checkboxes = e.target.querySelectorAll('input[type="checkbox"]:checked');
+                    let ids = '';
+                    checkboxes.forEach(el => {
+                        ids += `${el.value} `;
+                    });
+                    this.window.location.href = "../../home/home.html?ids=" + encodeURIComponent(ids);
     
-                for (const valor of formData.entries()) {
-                    console.log(valor);
-                    console.log(` rapaz: ${e}`)
+                    return;
                 }
-                
-                this.form.submit(); // Os dados são enviados em forma de query Strings.
             }
         })
     }

@@ -79,7 +79,7 @@ function createMovieCard(movie) {
 
 // é uma funçaõ que ouve quando a pagina é carrega para buscar as informações na API 
 document.addEventListener('DOMContentLoaded', () => {
-    fetchGenre();
+    // fetchGenre();
 });
 
 
