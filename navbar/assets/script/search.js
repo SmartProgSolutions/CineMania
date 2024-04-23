@@ -49,7 +49,7 @@ class Search{
         const image = this.document.createElement('img');
         image.src = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
         image.alt = movie.title;
-        image.onerror = () => this.handleImageError(image);
+        image.onerror = () => this.handleImageError(image); //Callback de erro para a imagem.
     
         card.appendChild(image);
         card.appendChild(title);
@@ -57,9 +57,9 @@ class Search{
         return card;
     }
 
-    handleImageError(img) {
+    handleImageError(img) { // Função que lida com o erro de carregamento da imagem.
         const div = img.parentNode;
-        div.remove(); // Remover o elemento pai (div) que contém a imagem
+        div.remove();
     }
 }
 
