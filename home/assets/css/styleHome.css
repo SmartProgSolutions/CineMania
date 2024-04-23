@@ -6,7 +6,7 @@ body{
     padding:0;
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(90deg,#30142b, #640B8B);
-     color: aliceblue;
+    color: aliceblue;
     flex-wrap: wrap;
     display: flex;
     background-repeat: no-repeat;
