@@ -52,6 +52,25 @@ body{
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 }
+/* 
+.popular-movies {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.popular-series {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+} */
+.slide{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
 
 .movie-card {
     flex: 0 0 auto;
