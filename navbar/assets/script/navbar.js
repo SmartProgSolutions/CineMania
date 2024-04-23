@@ -17,15 +17,15 @@ class Navbar{
             const search = this.createLink(null, null, null, 'buscador');
             const entrar = this.createLink('../../loginAndRegister/index.html', null, 'Entrar');
             const registrar = this.createLink('../../loginAndRegister/index.html', null, 'Registrar-se');
-            // const buttonPortugues = this.createButton('button', 'btnPortugues', 'btnLanguage', 'Português');
-            // const buttonEnglish = this.createButton('button', 'btnIngles', 'btnLanguage', 'Inglês');
+            const discover = this.createLink('../../filterMidias/filtro.html', null, 'Discover');
+            const contato = this.createLink('../../contact/index.html', null, 'Contato');
 
 
             this.ul.appendChild(cinemania);
             this.ul.appendChild(lancamentos);
             this.ul.appendChild(categorias);
-            // this.ul.appendChild(buttonPortugues);
-            // this.ul.appendChild(buttonEnglish);
+            this.ul.appendChild(discover);
+            this.ul.appendChild(contato);
             this.ul.appendChild(search);
             this.ul.appendChild(entrar);
             this.ul.appendChild(registrar);

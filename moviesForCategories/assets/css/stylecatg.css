@@ -4,7 +4,8 @@ body{
  margin:0;
  padding:0;
  font-family: sans-serif;
- background: linear-gradient(90deg, #0D0D0D, #5F0E8F);
+ /* background: linear-gradient(90deg, #0D0D0D, #5F0E8F); */
+ background: linear-gradient(90deg,#30142b, #640B8B);
  color: #F2F2F2;
  flex-wrap: wrap;
  display: flex;
