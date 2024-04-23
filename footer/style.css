@@ -1,0 +1,19 @@
+  body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: purple;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
