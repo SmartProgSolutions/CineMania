@@ -51,6 +51,11 @@ class Search{
         image.alt = movie.title;
         image.onerror = () => this.handleImageError(image); //Callback de erro para a imagem.
     
+        image.addEventListener('click', function() {
+            // Redireciona para a página de detalhes do filme
+            window.location.href = `../../detailsMovie/detailMovie.html?id=${movie.id}`;
+        });
+
         card.appendChild(image);
         card.appendChild(title);
     
