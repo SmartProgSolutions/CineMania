@@ -2,24 +2,23 @@ const apiKey = '5d3740a5fc6dfa4e862bede23e6d4fdb'; // é bom que cada um colque 
 const idioma = 'pt-BR';
 // busca os generos do tmbd e chama a  fetchMoviesByGenre para que cade filme seja logo colocado dentroo
 // de sua respctiva categoria 
+// function fetchGenre() {
+//     const fetchGenreUrl = `http://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=${idioma}`;
 
-function fetchGenre() {
-    const fetchGenreUrl = `http://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=${idioma}`;
+//     fetch(fetchGenreUrl)
+//         .then(response => response.json())
+//         .then(data => {
+//             const categorySection = document.querySelector('.categories');
+//             data.genres.forEach(genre => {
+//                 const category = createGenreSection(genre);
+//                 categorySection.appendChild(category);
+//                 console.log(genre)
 
-    fetch(fetchGenreUrl)
-        .then(response => response.json())
-        .then(data => {
-            const categorySection = document.querySelector('.categories');
-            data.genres.forEach(genre => {
-                const category = createGenreSection(genre);
-                categorySection.appendChild(category);
-                console.log(genre)
-
-                // Busca os filmes para cada gênero e os anexa à seção de filmes da categoria
-                fetchMoviesByGenre(genre.id, category.querySelector('.movie-row'));
-            });
-        }).catch(error => console.error('Erro ao buscar gêneros', error));
-}
+//                 // Busca os filmes para cada gênero e os anexa à seção de filmes da categoria
+//                 fetchMoviesByGenre(genre.id, category.querySelector('.movie-row'));
+//             });
+//         }).catch(error => console.error('Erro ao buscar gêneros', error));
+// }
 
 // essa fynção busca o Json com os filmes desejados
 function fetchMoviesByGenre(genreId, movieRow) {
@@ -37,6 +36,23 @@ function fetchMoviesByGenre(genreId, movieRow) {
         .catch(error => console.error('Erro ao buscar filmes:', error));
 }
 
+
+// Essa finção cria os seções de categorias , 
+// function createGenreSection(genre) {
+//     const category = document.createElement('div');
+//     category.className = 'category-grade';
+
+//     const genreName = document.createElement('h2');
+//     genreName.textContent = genre.name;
+//     category.appendChild(genreName);
+
+//     // cria um elemento onde seram inseridos 
+//     const movieRow = document.createElement('div');
+//     movieRow.className = 'movie-row';
+//     category.appendChild(movieRow);
+
+//     return category;
+// }
 
 // Essa fpnção cria os cards dos filmes 
 function createMovieCard(movie) {
