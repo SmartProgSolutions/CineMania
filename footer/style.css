@@ -1,19 +1,20 @@
-  body {
-    height: 100vh;
-    overflow: hidden;
-    font-family: sans-serif;
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem;
-    background: purple;
-    color: white;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.2rem;
-  }
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0; /* Garante que não haja margem extra no topo ou na parte inferior da página */
+}
+
+.footer {
+  position: fixed; /* Fixa o rodapé na parte inferior da janela de visualização */
+  bottom: 0; /* Alinha o rodapé com a parte inferior da janela de visualização */
+  left: 0; /* Alinha o rodapé com a parte esquerda da janela de visualização */
+  right: 0; /* Alinha o rodapé com a parte direita da janela de visualização */
+  padding: 2rem;
+  background: #640B8B;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
