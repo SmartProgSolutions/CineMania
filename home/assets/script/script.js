@@ -14,6 +14,7 @@ function fetchGenre() {
     fetch(fetchGenreUrl)
         .then(response => response.json())
         .then(data => {
+            getParams();
             const categorySection = document.querySelector('.categories');
             data.genres.forEach(genre => {
                 const category = createGenreSection(genre);
@@ -87,6 +88,15 @@ function createMovieCard(movie) {
 document.addEventListener('DOMContentLoaded', () => {
     fetchGenre();
 });
+
+function getParams(){
+    //Receber -> Home
+    const params = new URLSearchParams(window.location.search);
+    const ids = params.get('ids');
+    
+    console.log(ids);
+}
+
 
 
 
