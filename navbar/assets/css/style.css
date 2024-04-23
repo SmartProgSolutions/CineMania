@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #0D0D0D;
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,11 +25,11 @@ li a {
 }
   
 li a:hover:not(.active) {
-    background-color: #111;
+    background: linear-gradient(90deg,#5F0E8F, #0D0D0D, #5F0E8F);
 }
   
 .active {
-    background-color: #04AA6D;
+    background: linear-gradient(90deg, #0D0D0D, #5F0E8F);
 }
 
 #botaoPesquisa{
