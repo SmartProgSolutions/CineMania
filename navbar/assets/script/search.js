@@ -59,7 +59,7 @@ class Search{
 
     handleImageError(img) { // Função que lida com o erro de carregamento da imagem.
         const div = img.parentNode;
-        div.remove();
+        div.remove(); // Removendo div.
     }
 }
 
