@@ -12,20 +12,20 @@ class Navbar{
     eventContent(){ // Método para tratar do evento DOMContentLoaded
         this.document.addEventListener('DOMContentLoaded', () => {
             const cinemania = this.createLink('../../../home/home.html', 'active', 'CineMania');
-            const lancamentos = this.createLink('#lancamentos', null, 'Lançamentos');
+            const lancamentos = this.createLink('../../lancamentos/html/lancamentos.html', null, 'Lançamentos');
             const categorias = this.createLink('../../moviesForCategories/catg.html', null, 'Categorias');
             const search = this.createLink(null, null, null, 'buscador');
             const entrar = this.createLink('../../loginAndRegister/index.html', null, 'Entrar');
             const registrar = this.createLink('../../loginAndRegister/index.html', null, 'Registrar-se');
-            const buttonPortugues = this.createButton('button', 'btnPortugues', 'btnLanguage', 'Português');
-            const buttonEnglish = this.createButton('button', 'btnIngles', 'btnLanguage', 'Inglês');
+            // const buttonPortugues = this.createButton('button', 'btnPortugues', 'btnLanguage', 'Português');
+            // const buttonEnglish = this.createButton('button', 'btnIngles', 'btnLanguage', 'Inglês');
 
 
             this.ul.appendChild(cinemania);
             this.ul.appendChild(lancamentos);
             this.ul.appendChild(categorias);
-            this.ul.appendChild(buttonPortugues);
-            this.ul.appendChild(buttonEnglish);
+            // this.ul.appendChild(buttonPortugues);
+            // this.ul.appendChild(buttonEnglish);
             this.ul.appendChild(search);
             this.ul.appendChild(entrar);
             this.ul.appendChild(registrar);
