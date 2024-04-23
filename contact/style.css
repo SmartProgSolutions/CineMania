@@ -14,8 +14,7 @@ body{
 #navbar {
     position: absolute;
     left: 0;
-    top: 0; /* Isso posiciona a #navbar no topo da página */
-    /* Remova ou ajuste a propriedade transform conforme necessário */
+    top: 0; 
 }
 /* .navbar-container { 
     display: flex;
