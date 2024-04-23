@@ -11,6 +11,22 @@ body{
     background: linear-gradient(90deg, rgba(48,20,43,1) 0%, rgba(163,0,255,1) 35%);
 }
 
+#navbar {
+    position: absolute;
+    left: 0;
+    top: 0; /* Isso posiciona a #navbar no topo da página */
+    /* Remova ou ajuste a propriedade transform conforme necessário */
+}
+/* .navbar-container { 
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; 
+}   
+
+#navbar {
+    display: flex;
+    align-items: flex-start;
+} */
 h1{
     display: block;
     text-align: center;
