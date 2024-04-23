@@ -16,6 +16,7 @@
 
     <div class="container">
         <h2>Home</h2>
+
         <div id="categories" class="categories">
             <div id="category" class="category">
                 <!-- Aqui seram montadas as categorias de seus respctivos sliders de filmes -->
@@ -23,7 +24,10 @@
         </div> 
     
         <div class="preference-categories"></div> <!-- vamos colocar as preferencias de categorias do usuário-->
-        <div class="popular-movies"></div>  <!--http://api.themoviedb.org/3/movie/popular?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
+
+        <div class="popular-movies">
+            <h3>Filmes populares</h3>
+        </div>  <!--http://api.themoviedb.org/3/movie/popular?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
         <div class="popular-series"></div>  <!-- https://api.themoviedb.org/3/tv/popular?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
         <div class="featured-movies"></div>  <!-- https://api.themoviedb.org/3/movie/top_rated?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
         <div class="featured-series"></div>  <!-- https://api.themoviedb.org/3/tv/top_rated?language=pt-BR&api_key=5d3740a5fc6dfa4e862bede23e6d4fdb -->
@@ -32,6 +36,7 @@
     <!-- <script src="./assets/script/script.js"></script>  -->
     <script src="../navbar/assets/script/navbar.js"></script>
     <script src="../navbar/assets/script/search.js"></script>
-    <script src="../home/assets/script/gennerateSections.js"></script>
+    <script src="./assets/script/getIdsPreferences.js"></script>
+    <script src="../home/assets/script/popularMovies.js"></script>
 </body>
 </html>
