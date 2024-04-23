@@ -1,0 +1,91 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background: rgb(48,20,43);
+    background: linear-gradient(90deg, rgba(48,20,43,1) 0%, rgba(163,0,255,1) 35%);
+}
+
+h1{
+    display: block;
+    text-align: center;
+}
+
+.conteiner{
+    padding: 50px;
+    background-color: #a300ff; 
+    align-items: center;
+    border-radius: 10px;
+    min-height: 90vh;
+}
+
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+.campo{
+    margin-bottom:10px ;
+    width: 98%;
+    padding: 7px;
+    border-radius: 8px;
+    /*color: #fcf7f7;*/
+    /*background-color: rgba(104, 101, 101, 0.514);*/
+    background-color: white;
+    border: none;
+    outline: none;
+}
+.campo::placeholder{
+    color: #b3afaf;
+}
+
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 10px 20px;
+    outline: none;
+    width: fit-content;
+    color: #f8f6f6;
+    background: rgba(102, 101, 101, 0.445);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgb(22, 22, 22);
+}
+.espaco{
+    display: flex;
+    width: 500px;
+}
+#mensagem{
+    resize: none;
+    width: 98%;
+    height: 200px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .campo,
+    #mensagem {
+        width: 100%; /* Define a largura dos campos como 100% para ocupar toda a largura disponível */
+    }
+    .submit {
+        width: auto; /* Deixe o botão com a largura padrão para que ele não ocupe toda a largura da tela */
+    }
+    .espaco {
+        width: auto; /* Deixe a largura do espaço flexível */
+    }
+}

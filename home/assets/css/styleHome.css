@@ -45,7 +45,6 @@ body{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    margin-bottom: 50px;
 }
 
 .movie-card {
@@ -57,12 +56,4 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     /*  Estilos do card do filme */
-}
-
-.popular-movies {
-    
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
 }
