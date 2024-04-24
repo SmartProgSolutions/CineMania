@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
     background: linear-gradient(90deg, #0D0D0D, #5F0E8F);
     color: rgb(223, 218, 218);
-    
+    padding-left: 10px;
 }
 
 #formPreferencia{
@@ -21,6 +21,14 @@ button{
 header{
     margin-top: 60px
 }
+button{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+button:hover{
+    background-color: #a200ff;
+    color: #f2f2f2;
+}
 
 /* O css abaixo é para a navbar */
 
@@ -38,7 +46,6 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
-
     display: flex;
     justify-content: space-between; /* Distribui os itens uniformemente */
     list-style-type: none;

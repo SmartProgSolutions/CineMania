@@ -26,7 +26,7 @@ border: 1px solid #f2f2f2;
 border-radius: 20px;
 }
 
-#filterButton {
+#filterButton:hover {
 width: 20%;
 padding: 10px;
 border: none;
@@ -34,6 +34,16 @@ background-color: #5F0E8F;
 color: #f2f2f2;
 cursor: pointer;
 border-radius: 20px;
+background-color: #a200ff;
+}
+#filterButton {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    background-color: #5F0E8F;
+    color: #f2f2f2;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 label{
