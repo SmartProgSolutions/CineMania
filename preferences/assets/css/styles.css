@@ -7,15 +7,27 @@ body{
 
 #formPreferencia{
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin: 10vh 40vh
 }
+
 
 .labels{
     margin: 10px;
+    width: 200px;
+    height: 5vh;
+    text-align: center;
+    align-items: baseline;
+    border-radius: 20%;
+    background: #5F0E8F;
 }
 
 button{
     width: 100px;
+    margin-top: 12vh;
+    border-radius: 20px;
+    height: 30px;
 }
 
 header{
