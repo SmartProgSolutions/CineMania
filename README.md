@@ -1,5 +1,5 @@
 <div align="center" id="top">
-  <img src="./.github/Home-1.jpg" alt="CineMania" />
+  <img src="./.github/home.png" alt="CineMania" />
 
   &#xa0;
 
@@ -40,39 +40,68 @@
 
 <br>
 
-## Visão Geral 
+## Requisitos Mínimos ##
 
-O CineMania é uma aplicação web que oferece aos usuários um vasto catálogo de filmes, buscando proporcionar uma experiência completa e intuitiva para a navegação e pesquisa de obras cinematográficas. A plataforma foi desenvolvida utilizando tecnologias modernas e segue os princípios de acessibilidade e design responsivo, garantindo uma experiência agradável em diferentes dispositivos.
+:white_check_mark: Minimo 8 páginas \
+:white_check_mark: Navegação entre páginas \
+:white_check_mark: Minimo 3 imagens \
+:white_check_mark: 1 áudio \
+:white_check_mark: 1 vídeo \
+:white_check_mark: Estilização CSS\
+:white_check_mark: Minimo 1 Formulário\
+:white_check_mark: estrutura básica HTML <header> <section> <footer>\
+:white_check_mark: Minimo 3 eventos DOM\
+
+## Visão Geral ##
+
+O CineMania é uma aplicação web que oferece aos usuários um vasto catálogo de filmes, buscando proporcionar uma experiência completa e intuitiva para a navegação e pesquisa de obras cinematográficas. A plataforma foi desenvolvida utilizando tecnologias modernas e segue os princípios de acessibilidade e design responsivo, garantindo uma experiência agradável em diferentes dispositivos. usamos conceitos de Abstração de POO, para reutilização de código, 
 
 ## Telas da aplicação
 
-### Login/Register ##
+### 1-Login ##
 
-<img src="#" alt="Imagem da tela Login" />
+<img src="./.github/login.png" alt="Imagem da tela Login" />
 
-## Preferências ##
+### 2-Register ##
 
-<img src="#" alt="Imagem da tela de Preferencias" />
+<img src="./.github/cadastro.png" alt="Imagem da tela registro" />
 
-## Home ##
+## 3-Preferências ##
 
-<img src="#" alt="Imagem da tela Home" />
+<img src="./.github/preferences.png" alt="Imagem da tela de Preferencias" />
 
-## Discover ##
+## 4-Home ##
 
-<img src="#" alt="Imagem da tela de Discover" />
+<img src="./.github/home.png" alt="Imagem da tela Home" />
 
-## Categorias ##
+## 5-Discover ##
 
-<img src="#" alt="Imagem da tela de Categorias" />
+<img src="./.github/discover.png" alt="Imagem da tela de Discover" />
 
-## Categorias ##
+## 6-Categorias ##
 
-<img src="#" alt="Imagem da tela de Lançamento" />
+<img src="./.github/categorias.png" alt="Imagem da tela de Categorias" />
 
-## Contato ##
+## 7-Contato ##
 
-<img src="#" alt="Imagem da tela de Contato" />
+<img src="./.github/contato.png" alt="Imagem da tela de Contato" />
+
+## 8-Detalhes do Movie ##
+
+<img src="./.github/details.png" alt="Imagem da tela de detalhes" />
+
+## 9-Lançamentos ##
+
+<img src="./.github/lancamento.png" alt="Imagem da tela de lançamentos" />
+
+## 10- Resultados da pesquisa ##
+
+<img src="./.github/results.png" alt="Imagem da tela de results" />
+
+
+## 10- Resultados da pesquisa ##
+
+<img src="./.github/results.png" alt="Imagem da tela de results" />
 
 
 ## :skateboard: Funcionalidades ##
@@ -100,6 +129,7 @@ O CineMania é uma aplicação web que oferece aos usuários um vasto catálogo 
 - [Live Server](#)
 - [JavaScript](#)
 - [API TMDB](https://www.themoviedb.org/)
+- [envio de emails com FormSpree](#)
 
 # Equipe de Desenvolvimento
 
