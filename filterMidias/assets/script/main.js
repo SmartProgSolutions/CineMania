@@ -5,13 +5,15 @@ const apiUrl10 = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey
 const apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=${idioma}&sort_by=popularity.desc`;
 
 document.addEventListener('DOMContentLoaded', () => {
+
+    // colocar os filmes da page result 
     fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             const movieCardsContainer = document.getElementById('movie-cards');
             data.results.forEach(movie => {
                 const movieCard = createMovieCard(movie);
-                console.log(movie)
+                // console.log(movie)
                 movieCardsContainer.appendChild(movieCard);
             });
         })
@@ -33,6 +35,30 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .catch(error => console.error('Erro ao buscar gêneros:', error));
 
+            document.getElementById('filterButton').addEventListener('click', function() {
+                const genre = document.getElementById('genreFilter').value;
+                const year = document.getElementById('yearFilter').value;
+                let apiUrl = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=${idioma}&sort_by=popularity.desc`;
+            
+                if (genre) {
+                    apiUrl += `&with_genres=${genre}`;
+                }
+                if (year) {
+                    apiUrl += `&primary_release_year=${year}`;
+                }
+            
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        const movieCardsContainer = document.getElementById('movie-cards');
+                        movieCardsContainer.innerHTML = ''; // Limpa os cartões de filmes existentes
+                        data.results.forEach(movie => {
+                            const movieCard = createMovieCard(movie);
+                            movieCardsContainer.appendChild(movieCard);
+                        });
+                    })
+                    .catch(error => console.error('Erro ao buscar filmes filtrados:', error));
+            });
 });
 
 function createMovieCard(movie) {
@@ -63,19 +89,19 @@ function createMovieCard(movie) {
 
 console.log("Allora ")
 
-fetch(apiUrl)
- .then(response => response.json())
- .then(data => {
-    const genreDropdown = document.getElementById('genreFilter');
-    genreDropdown.innerHTML = ''; // Limpa o select antes de adicionar novas opções
-    const genres = data.genres;
-    genres.forEach(genre => {
-      const option = document.createElement('option');
-      option.value = genre.id; // Use o ID do gênero como valor para a opção
-      option.textContent = genre.name; // Use o nome do gênero como texto visível
-      genreDropdown.appendChild(option);
-    });
- })
- .catch(error => console.error('Erro ao buscar gêneros:', error));
+// fetch(apiUrl)
+//  .then(response => response.json())
+//  .then(data => {
+//     const genreDropdown = document.getElementById('genreFilter');
+//     genreDropdown.innerHTML = ''; // Limpa o select antes de adicionar novas opções
+//     const genres = data.genres;
+//     genres.forEach(genre => {
+//       const option = document.createElement('option');
+//       option.value = genre.id; // Use o ID do gênero como valor para a opção
+//       option.textContent = genre.name; // Use o nome do gênero como texto visível
+//       genreDropdown.appendChild(option);
+//     });
+//  })
+//  .catch(error => console.error('Erro ao buscar gêneros:', error));
 
 
