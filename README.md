@@ -4,7 +4,7 @@
   &#xa0;
 
 
-  <a href="#">Demo</a>
+  <a href="https://smartprogsolutions.github.io/CineMania/">Demo</a>
 </div>
 
 <h1 align="center">CineMania</h1>
