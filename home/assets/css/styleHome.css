@@ -5,7 +5,7 @@ body{
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(90deg,#30142b, #640B8B);
+    background: linear-gradient(90deg, #0D0D0D, #5F0E8F);
     color: aliceblue;
     flex-wrap: wrap;
     display: flex;

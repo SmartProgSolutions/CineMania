@@ -14,7 +14,6 @@
     width: 10%;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -26,8 +25,7 @@
 }
 .movie-card img{
     width: 100%;
-    height: auto;
-    border-radius: 20px;
+    height: auto; 
 }
 
 .movie-card h2 {
@@ -43,5 +41,5 @@ body{
  margin:0;
  padding:0;
  font-family: sans-serif;
- background: linear-gradient(90deg,#30142b, #640B8B);
+ background: linear-gradient(90deg, #0D0D0D, #5F0E8F);
 }
