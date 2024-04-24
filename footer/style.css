@@ -22,12 +22,13 @@ body {
   width: 100%;
   /* Ajuste a altura conforme necessário */
   height: 40px;
-  background-color: purple;
+  background-color: #5F0E8F;
   color: white;
   font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.2rem;
+  padding: 10px 0;
  }
  

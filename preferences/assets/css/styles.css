@@ -1,7 +1,8 @@
 body{
     font-family: sans-serif;
-    background: #440c64;
+    background: linear-gradient(90deg, #0D0D0D, #5F0E8F);
     color: rgb(223, 218, 218);
+    
 }
 
 #formPreferencia{

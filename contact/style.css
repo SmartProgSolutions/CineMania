@@ -8,7 +8,7 @@ body{
     min-height: 100vh;
     font-family: sans-serif;
     color: aliceblue;
-    background: linear-gradient(90deg,#30142b, #640B8B);
+    background: linear-gradient(90deg, #0D0D0D, #5F0E8F);
 }
 
 #navbar {
