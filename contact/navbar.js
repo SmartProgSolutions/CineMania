@@ -40,7 +40,7 @@ class Navbar{
         if(id){
             li.setAttribute('id', id);
 
-            const formBuscador = this.createForm('search.html', 'get', 'formBuscador');
+            const formBuscador = this.createForm('../results/search.html', 'get', 'formBuscador');
             const label = this.createLabel('Search: ', 'search');
             const buscador = this.createInput('search');
             const button = this.createButton('submit', 'botaoPesquisa');
