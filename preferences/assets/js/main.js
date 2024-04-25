@@ -25,7 +25,7 @@ class Categorias{
                     checkboxes.forEach(el => {
                         ids += `${el.value} `;
                     });
-                    this.window.location.href = "../../home/home.html?ids=" + encodeURIComponent(ids);
+                    this.window.location.href = "https://smartprogsolutions.github.io/CineMania/home/home.html?ids=" + encodeURIComponent(ids);
     
                     return;
                 }
