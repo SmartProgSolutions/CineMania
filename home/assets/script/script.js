@@ -9,7 +9,7 @@ const apiKey = '5d3740a5fc6dfa4e862bede23e6d4fdb'; // é bom que cada um colque 
 // busca os generos do tmbd e chama a  fetchMoviesByGenre para que cade filme seja logo colocado dentroo
 // de sua respctiva categoria 
 function fetchGenre() {
-    const fetchGenreUrl = `http://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=pt-BR`;
+    const fetchGenreUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=pt-BR`;
 
     fetch(fetchGenreUrl)
         .then(response => response.json())
@@ -100,4 +100,4 @@ function getParams(){
 
 
 
-// http://api.themoviedb.org/3/movie/popular?api_key=5d3740a5fc6dfa4e862bede23e6d4fdb&language=pt-BR filmes populares
+// https://api.themoviedb.org/3/movie/popular?api_key=5d3740a5fc6dfa4e862bede23e6d4fdb&language=pt-BR filmes populares

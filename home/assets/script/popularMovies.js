@@ -4,7 +4,7 @@ const apiKeyy = '5d3740a5fc6dfa4e862bede23e6d4fdb'; // é bom que cada um colque
 
 // essa fynção busca o Json com os filmes desejados
 function fetchMoviesByType() {
-    const fetchMoviesByGenreUrl = `http://api.themoviedb.org/3/movie/popular?language=pt-BR&api_key=${apiKeyy}&page=1`;
+    const fetchMoviesByGenreUrl = `https://api.themoviedb.org/3/movie/popular?language=pt-BR&api_key=${apiKeyy}&page=1`;
 
     fetch(fetchMoviesByGenreUrl)
         .then(response => response.json())

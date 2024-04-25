@@ -40,7 +40,7 @@ class Categorias{
     }
 
     fetchGenre() { // Método para puxar os gêneros
-        const fetchGenreUrl = `http://api.themoviedb.org/3/genre/movie/list?api_key=${this.apiKey}&language=pt-BR`;
+        const fetchGenreUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${this.apiKey}&language=pt-BR`;
         // this.queryString();
 
         fetch(fetchGenreUrl)
