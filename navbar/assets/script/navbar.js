@@ -12,13 +12,13 @@ class Navbar{
     eventContent(){ // Método para tratar do evento DOMContentLoaded
         this.document.addEventListener('DOMContentLoaded', () => {
             const cinemania = this.createLink('../home/home.html', 'active', 'CineMania');
-            const lancamentos = this.createLink('../lancamentos/html/lancamentos.html', null, 'Lançamentos');
-            const categorias = this.createLink('../moviesForCategories/catg.html', null, 'Categorias');
+            const lancamentos = this.createLink('../../lancamentos/html/lancamentos.html', null, 'Lançamentos');
+            const categorias = this.createLink('../../moviesForCategories/catg.html', null, 'Categorias');
             const search = this.createLink(null, null, null, 'buscador');
-            const entrar = this.createLink('../loginAndRegister/index.html', null, 'Entrar');
-            const registrar = this.createLink('../loginAndRegister/index.html', null, 'Registrar-se');
-            const discover = this.createLink('../filterMidias/filtro.html', null, 'Discover');
-            const contato = this.createLink('../contact/index.html', null, 'Contato');
+            const entrar = this.createLink('../../loginAndRegister/index.html', null, 'Entrar');
+            const registrar = this.createLink('../../loginAndRegister/index.html', null, 'Registrar-se');
+            const discover = this.createLink('.././filterMidias/filtro.html', null, 'Discover');
+            const contato = this.createLink('../../contact/index.html', null, 'Contato');
 
 
             this.ul.appendChild(cinemania);
