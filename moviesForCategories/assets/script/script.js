@@ -11,7 +11,7 @@ const apiKey = '5d3740a5fc6dfa4e862bede23e6d4fdb'; // é bom que cada um colque 
 // de sua respctiva categoria 
 
 function fetchGenre() {
-    const fetchGenreUrl = `http://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=pt-BR`;
+    const fetchGenreUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${apiKey}&language=pt-BR`;
 
     fetch(fetchGenreUrl)
         .then(response => response.json())
