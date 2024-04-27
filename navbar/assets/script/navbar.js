@@ -11,14 +11,14 @@ class Navbar{
 
     eventContent(){ // Método para tratar do evento DOMContentLoaded
         this.document.addEventListener('DOMContentLoaded', () => {
-            const cinemania = this.createLink('../home/home.html', 'active', 'CineMania');
-            const lancamentos = this.createLink('../../lancamentos/html/lancamentos.html', null, 'Lançamentos');
-            const categorias = this.createLink('../../moviesForCategories/catg.html', null, 'Categorias');
+            const cinemania = this.createLink('https://smartprogsolutions.github.io/CineMania/home/home.html', 'active', 'CineMania');
+            const lancamentos = this.createLink('https://smartprogsolutions.github.io/CineMania/lancamentos/html/lancamentos.html', null, 'Lançamentos');
+            const categorias = this.createLink('https://smartprogsolutions.github.io/CineMania/moviesForCategories/catg.html', null, 'Categorias');
             const search = this.createLink(null, null, null, 'buscador');
-            const entrar = this.createLink('../../loginAndRegister/index.html', null, 'Entrar');
-            const registrar = this.createLink('../../loginAndRegister/index.html', null, 'Registrar-se');
-            const discover = this.createLink('.././filterMidias/filtro.html', null, 'Discover');
-            const contato = this.createLink('../../contact/index.html', null, 'Contato');
+            const entrar = this.createLink('https://smartprogsolutions.github.io/CineMania/loginAndRegister/index.html', null, 'Entrar');
+            const registrar = this.createLink('https://smartprogsolutions.github.io/CineMania/loginAndRegister/index.html', null, 'Registrar-se');
+            const discover = this.createLink('https://smartprogsolutions.github.io/CineMania/filterMidias/filtro.html', null, 'Discover');
+            const contato = this.createLink('https://smartprogsolutions.github.io/CineMania/contact/index.html', null, 'Contato');
 
 
             this.ul.appendChild(cinemania);
@@ -40,7 +40,7 @@ class Navbar{
 
             if(e.target.id === 'formBuscador'){
                 const dados = e.target.querySelector('#search').value;
-                this.window.location.href = "../../results/search.html?dados=" + encodeURIComponent(dados);
+                this.window.location.href = "https://smartprogsolutions.github.io/CineMania/results/search.html?dados=" + encodeURIComponent(dados);
 
                 return;
             }
