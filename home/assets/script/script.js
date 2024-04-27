@@ -74,7 +74,7 @@ function createMovieCard(movie) {
     image.alt = movie.title;
     image.addEventListener('click', function() {
         // Redireciona para a página de detalhes do filme
-        window.location.href = `../../detailsMovie/detailMovie.html?id=${movie.id}`;
+        window.location.href = `https://smartprogsolutions.github.io/CineMania/detailsMovie/detailMovie.html?id=${movie.id}`;
     });
 
     card.appendChild(image); 
