@@ -11,7 +11,7 @@ class Navbar{
 
     eventContent(){ // Método para tratar do evento DOMContentLoaded
         this.document.addEventListener('DOMContentLoaded', () => {
-            const cinemania = this.createLink('../../../home/home.html', 'active', 'CineMania');
+            const cinemania = this.createLink('../../home/home.html', 'active', 'CineMania');
             const lancamentos = this.createLink('../../lancamentos/html/lancamentos.html', null, 'Lançamentos');
             const categorias = this.createLink('../../moviesForCategories/catg.html', null, 'Categorias');
             const search = this.createLink(null, null, null, 'buscador');
